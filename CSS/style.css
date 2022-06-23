@@ -1,0 +1,457 @@
+/*===================
+ google fonts link  
+ =======================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+ /*=================
+  Reset  
+  ====================*/
+
+*,
+ *::before , 
+ *::after{
+  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+} 
+
+/*===========================
+ global variables  
+ ========================*/
+
+ :root{
+    --primary-color: #fff;
+    --secondary-color: #676CDB;
+    --primary-font:  'Poppins', sans-serif;
+    --secondary-font: 'Playfair Display SC', serif;
+ }
+
+
+html{
+
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+   color: var(--primary-color);
+}
+
+/*============================
+ custom scrollbar design  
+ =============================*/
+ ::-webkit-scrollbar{
+    width: .6rem;
+ }
+::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+}
+::-webkit-scrollbar-track{
+    background-color: var(--primary-color);
+}
+
+
+a,
+a:hover{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+
+/*====================
+custom design  
+=======================*/
+.flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.align-start{
+    align-items: flex-start;
+}
+.align-end{
+  align-items: flex-end;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.container{
+    max-width: 120rem;
+    width: 100%;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.main_btn{
+    padding: 2rem 4rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 2rem;
+    line-height: 120%;
+    font-weight: 400;
+}
+.main_btn span{
+    margin-right: 1rem;
+}
+.main_btn.transparent{
+    background-color: transparent !important;
+    text-decoration: underline;
+}
+/*================
+ header design  
+ ==================*/
+ .header_wrapper{
+    width: 100vw;
+ }
+ .header_wrapper .navbar{
+    width: 100%;
+    height: 6.5rem;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    transition: all 0.15s linear;
+    z-index: 1000;
+ }
+ .header_scrolled{
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+ }
+ .header_scrolled .nav_items .contact .nav_link{
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color);
+ }
+
+ .header_wrapper .navbar_barnd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .header_wrapper .navbar_barnd  a img{
+   display: block;
+   padding: 1rem 0 1rem 1rem;
+ }
+.header_wrapper .nav_items{
+    width: 90%;
+    gap: 4rem;
+    padding-left: 20rem;
+    
+}
+.header_wrapper  .nav_items .nav_link{
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 1.5rem 0;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-style: normal;
+}
+ .header_wrapper .nav_items .contact{ 
+  margin: 0 0 0 auto;
+} 
+.header_wrapper .nav_items .contact .nav_link{
+    padding: 1rem 2rem ;
+    background-color: var(--secondary-color);
+    line-height: 3rem;
+}
+
+.header_wrapper .bar_btn button{
+    display: none;
+    
+  }
+  .nav_items .cancel_btn button{
+    display: none;
+  }
+
+/*===================
+ banner design  
+ =====================*/
+ .banner_wrapper{
+  width:100%;
+  min-height: 100vh;
+  height: 100%;
+  background: rgba(34, 42, 54, 0.95);
+  background-image: url(../images/Rectangle\ 3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position:  top right;
+
+ }
+ .banner_wrapper .banner_text{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 5rem 0 2rem 0;
+ }
+ .banner_wrapper .banner_title{
+    font-size: 9rem;
+    line-height: 120%;
+    font-weight: 700;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    margin-bottom: 1rem;
+   
+ }
+ .banner_wrapper .banner_desc{
+    width: 40%;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 180%;
+    margin-bottom: 3rem;
+ }
+
+ /*============================= 
+ skill wrapper design  
+ ===============================*/
+ .skill_wrapper{
+    background-color: #000;
+    padding: 6rem 0;
+ }
+ .skill_wrapper .row{
+    flex-wrap: wrap !important;
+    gap: 2rem;
+ }
+
+ .skill_wrapper .row .skill_box img{
+    display: block;
+ }
+
+ /* services_wrapper design  */
+
+ .services_wrapper{
+    background-color: #222A36;
+    padding: 10rem 0;
+ }
+
+ .services_wrapper .left_content{
+    width: 20%;
+ }
+ .services_wrapper .left_content h1{
+    font-size: 10rem;
+    font-weight: 600;
+    font-family:  var(--secondary-font); 
+    color: var(--secondary-color);
+ }
+ .services_wrapper .left_content h2{
+    font-size: 4rem;
+    line-height: 180%;
+
+ }
+ .services_wrapper .right_content{
+    width: 80%;
+    padding-left: 8rem;
+ }
+ .services_wrapper .right_content  .services_heading h2{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    line-height: 180%;
+    margin-bottom: 2rem;
+ }
+
+ .services_wrapper .right_content .card_wrapper .card{
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background-color: #C4C4C4;
+    margin-right: 2rem;
+    padding: 3rem;
+    color: #000;
+    
+ }
+ .services_wrapper .right_content .card_wrapper .card:nth-child(1){
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+ }
+ .services_wrapper .right_content .card_wrapper .card:nth-child(3){
+    margin-right: 0 !important;
+ }
+ 
+/* ===========================
+review_wrapper design  
+=========================*/
+
+.review_wrapper{
+    padding: 10rem 0;
+    background-color: #222A36F2;
+}
+.review_wrapper .left_content{
+    width: 80%;
+    position: relative;
+    margin-right: 2rem;
+}
+
+.review_wrapper .left_content .slide{
+    gap: 2rem;
+}
+.review_wrapper .left_content .slider_wrapper{
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.review_wrapper .left_content .slide .img_desc p span{
+    font-size: 8rem;
+}
+.review_wrapper .left_content p{
+    font-size: 1.8rem;
+    line-height: 180%;
+}
+
+.review_wrapper .left_content .slider_wrapper .arrow_btn_group{
+   position: absolute;
+    margin-top: 2rem;
+    left: 60%;
+    bottom: 10px;
+    transform: translateX(-60%);
+
+}
+.review_wrapper .left_content .arrow_btn_group .left_btn,
+
+.review_wrapper .left_content .arrow_btn_group .right_btn{
+   color: var(--secondary-color);
+   background-color: transparent;
+   border: none !important;
+   outline: none !important;
+   font-size: 2.4rem;
+   font-weight: 400;
+   margin-right: 1rem;
+} 
+.review_wrapper .right_content{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.review_wrapper .right_content > div{ 
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.review_wrapper .right_content h2{
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+    line-height: 120%;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.review_wrapper .right_content h1{
+    font-size: 5rem;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+
+}
+
+.footer_wrapper{
+    padding: 10rem 0 5rem 0;
+    background-color: #000;
+}
+
+.footer_wrapper .left_content{
+    width: 40%;
+    text-align: left;
+}
+.footer_wrapper .left_content .title{
+    font-size: 10rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 3rem;
+}
+
+.footer_wrapper .left_content .social_link a{
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-right: 5rem;
+}
+
+.footer_wrapper .right_content{
+    width: 60%;
+    text-align: right;
+}
+.footer_wrapper .right_content form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 3rem;
+}
+.footer_wrapper .right_content form .input_group{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    text-align: left;
+}
+
+.footer_wrapper form .input_group label{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.footer_wrapper .right_content form .input_group input,
+
+.footer_wrapper .right_content form .input_group textarea{
+    padding: 1rem 2rem;
+    outline: none;
+    border: .02rem solid #222;
+    background: transparent;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    
+}
+
+.footer_copyright{
+    background-color: #000;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.footer_copyright p{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: .1rem;
+}
+
+.footer_copyright p span{
+    color: var(--primary-color);
+}

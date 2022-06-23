@@ -1,0 +1,448 @@
+@media(max-width:1100px){
+
+  /* navbar design  */
+
+  /* banner design  */
+
+  .banner_wrapper .banner_title{
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+
+
+  /* review design  */
+
+.review_wrapper .left_content p{
+    font-size: 1.6rem;
+    line-height: 180%;
+    width: 350px;
+}
+
+.review_wrapper .right_content h2{
+  font-family: var(--secondary-font);
+  font-size: 2.6rem;
+  line-height: 120%;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.review_wrapper .right_content h1{
+  font-size: 4rem;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+
+}
+
+.review_wrapper .left_content .slide .img_desc p span{
+  font-size: 6rem;
+}
+
+.review_wrapper .right_content > div{ 
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+}
+
+
+@media(max-width:991px){
+
+    /*==================
+     navbar design  
+    =================== */
+
+    .header_wrapper .nav_items{
+      width: 90%;
+      gap: 4rem;
+      padding-left: 10rem;
+      
+  }
+         
+
+.header_wrapper  .nav_items .nav_link{
+  font-size: 1.8rem;
+}
+
+/* banner design  */
+
+    .banner_wrapper .banner_desc{
+      width: 60%;
+    }
+ 
+    .banner_wrapper .banner_title{
+        font-size: 6rem;
+        line-height: 7rem;
+}
+
+
+    /* services design  */
+   
+    .services_wrapper {
+      padding: 6rem 0;
+    }
+
+    .services_wrapper .left_content h1{
+      font-size: 7rem;
+    }
+    .services_wrapper .left_content h2{
+      font-size: 3rem;
+    }
+
+    .services_wrapper .right_content  .services_heading h2{
+      font-size: 3rem;
+    }
+
+
+    /*===================
+     review wrapper  
+     ==============*/
+
+     .review_wrapper .row{
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+
+
+     }
+     .review_wrapper .left_content{
+      width: 100%;
+      position: relative;
+      margin: 2rem;
+  }
+
+     .review_wrapper .left_content p{
+      font-size: 1.6rem;
+      line-height: 180%;
+      width: auto;
+  }
+
+  .review_wrapper .right_content{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+  }
+
+
+.review_wrapper .left_content .slide .img_desc{
+  width: 50%;
+}
+
+/* ====================
+coantact width footer  
+======================*/
+.footer_wrapper .left_content {
+  width: 50%;
+}
+
+.footer_wrapper .left_content .title{
+  font-size: 7rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 3rem;
+}
+
+.footer_wrapper .left_content .social_link a{
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-right: 3rem;
+}
+
+
+
+}
+@media(max-width:767px){
+
+    /*=================
+     custom css  
+     ===================*/
+     .main_btn{
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+    
+    }
+
+
+
+/*===============
+ navbar design  
+ ==================*/
+ .header_wrapper .nav_items{
+    top: 6.5rem;
+    right: -100%;
+    position: fixed;
+    width: 50%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem 0 !important;
+   gap: 0 !important;
+   background-color: var(--secondary-color);
+   transition: all 0.3s linear;
+    
+    
+}
+.header_wrapper .nav_items.active{
+     right: 0;
+}
+.header_wrapper .nav_items .contact{ 
+    margin:  0 !important;
+   
+  } 
+
+
+  .header_wrapper .bar_btn button{
+    outline: none;
+    border: none;
+    display: block;
+
+  
+  }
+
+  .header_wrapper .bar_btn button span{
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    padding: .5rem;
+    border-radius: .1rem;
+    display: block;
+   
+  }
+
+
+  .nav_items .cancel_btn button{
+    outline: none;
+    border: none;
+    position: absolute;
+    top: .5rem;
+    left: 0rem;
+    display: block;
+  }
+  .nav_items .cancel_btn button span{
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    padding:  .5rem 1rem;
+    border-radius: .1rem;
+  }
+
+/* ====================
+banner design  
+======================*/
+.banner_wrapper{
+    background-size: cover;
+    background-position: bottom center;
+
+}
+.banner_wrapper .banner_text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:  center;
+    text-align: center;
+ }
+ .banner_wrapper .banner_desc{
+    width: 80%;
+    color:  rgb(1, 35, 109);
+    line-height: 180%;
+    margin-bottom: 3rem;
+    
+ }
+ 
+ .banner_wrapper .banner_title{
+    font-size: 5rem;
+    line-height: 6rem;
+
+ }
+
+
+ /* ===============
+ services design  
+ ===================*/
+ .services_wrapper .row{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+ }
+ .services_wrapper .right_content{
+  padding-left: 0 !important;
+  width: 90%;
+  margin: auto;
+ }
+
+ /* review design  */
+
+ 
+  .review_wrapper .left_content .slide{
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+} 
+ .review_wrapper .left_content .slide .img_desc{
+  width: 70%;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.review_wrapper .left_content .slider_wrapper .arrow_btn_group{
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* footer wrapper  */
+.footer_wrapper .row{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_wrapper .right_content{
+  width: 80%;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.footer_wrapper .right_content form .input_group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+}
+.footer_wrapper .right_content form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.footer_wrapper .left_content{
+  width: 80%;
+  text-align: center;
+}
+
+.footer_wrapper form .input_group label{
+  font-size: 2rem;
+}
+
+.footer_wrapper .left_content .title{
+  font-size: 5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 3rem;
+}
+
+    
+}
+@media(max-width:575px){
+    
+/* custom design  */
+ .btn_group .main_btn{
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    line-height: 120%;
+    margin-bottom: 1rem;
+
+}
+
+/*================
+ navbar design  
+ =================*/
+ .header_wrapper .nav_items{
+    width: 250px;
+ }
+
+
+
+/* banner design  */
+
+.banner_wrapper .banner_title{
+    font-size: 4rem;
+    line-height: 5rem;
+
+   
+ }
+ .banner_wrapper .banner_desc{
+    width: 90%;
+    
+ }
+
+ /*=====================
+  skill wrapper design  
+  =======================*/
+
+
+  /*===================
+   services design  
+  =================== */
+
+      /* services design  */
+
+      .services_wrapper .left_content{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+     }
+      .services_wrapper .left_content h1{
+        font-size: 6rem;
+      }
+      .services_wrapper .left_content h2{
+        font-size: 2.6rem;
+      }
+  
+      .services_wrapper .right_content  .services_heading h2{
+        font-size: 2.6rem;
+      }
+
+
+      .services_wrapper .card_wrapper{
+        flex-direction: column;
+      }
+   
+      .services_wrapper .card_wrapper .card{
+        margin: 1rem 0rem !important;
+      }
+      
+
+      /* review wrapper  */
+
+      .review_wrapper .left_content .slide .img_desc{
+        width: 100%;
+        text-align: center;
+  
+      }
+
+
+      /* footer wrapper design  */
+      .footer_wrapper .left_content{
+        width: 100%;
+        text-align: center;
+      }
+      .footer_wrapper .right_content{
+        width: 100%;
+        text-align: center;
+         padding: 2rem ;
+      }
+
+      .footer_wrapper .right_content form .input_group textarea{
+        width: 280px;
+      }
+
+
+}
+@media(max-width:991px){
+    
+}
